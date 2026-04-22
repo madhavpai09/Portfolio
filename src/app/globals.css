@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #22d3ee #111119;
+  }
+
+  body {
+    @apply bg-[#09090f] text-slate-100 antialiased;
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.2);
+    color: #22d3ee;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent;
+  }
+
+  .gradient-text-cyan {
+    @apply bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-sm border border-white/[0.06];
+  }
+
+  .section-animate {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .section-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.2),
+      0 20px 60px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm
+      bg-cyan-400 text-gray-950 hover:bg-cyan-300 active:scale-95
+      transition-all duration-200 ease-out;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm
+      border border-white/10 text-slate-300 hover:border-cyan-400/40 hover:text-cyan-400
+      transition-all duration-200 ease-out;
+  }
+
+  .skill-badge {
+    @apply px-3 py-1.5 rounded-md text-sm font-medium
+      bg-white/[0.04] border border-white/[0.08]
+      text-slate-300 hover:text-cyan-400 hover:border-cyan-400/30
+      transition-all duration-200;
+  }
+
+  .tag {
+    @apply px-2.5 py-1 rounded text-xs font-mono
+      bg-cyan-400/10 text-cyan-400 border border-cyan-400/20;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #111119;
+}
+::-webkit-scrollbar-thumb {
+  background: #22d3ee44;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee88;
+}
