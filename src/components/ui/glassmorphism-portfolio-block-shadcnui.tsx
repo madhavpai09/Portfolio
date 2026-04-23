@@ -266,8 +266,12 @@ export function GlassmorphismPortfolioBlock() {
                     className="relative"
                   >
                     <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/20 blur-2xl" />
-                    <div className="relative flex h-24 w-24 items-center justify-center rounded-full border border-white/10 bg-gradient-to-br from-cyan-400/20 to-violet-400/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-                      <Cpu className="h-9 w-9 text-cyan-400" />
+                    <div className="relative h-24 w-24 rounded-full border border-white/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                      <img
+                        src="/badge.jpg"
+                        alt="Madhav Pai"
+                        className="h-full w-full object-cover"
+                        />
                     </div>
                   </motion.div>
 
