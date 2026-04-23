@@ -42,7 +42,7 @@ const highlights: Highlight[] = [
   {
     title: 'Availability',
     description:
-      'Open to full-time SWE & AI roles · Based in Bangalore, India · Open to remote & relocation.',
+      'Open to full-time SDE & AI roles · Based in Bangalore, India · Open to remote & relocation.',
   },
 ];
 
