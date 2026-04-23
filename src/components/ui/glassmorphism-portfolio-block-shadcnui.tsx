@@ -268,7 +268,7 @@ export function GlassmorphismPortfolioBlock() {
                     <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/20 blur-2xl" />
                     <div className="relative h-24 w-24 rounded-full border border-white/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                       <img
-                        src="/badge.jpg"
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/badge.jpg`}
                         alt="Madhav Pai"
                         className="h-full w-full object-cover"
                         />
