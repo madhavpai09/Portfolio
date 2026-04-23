@@ -70,7 +70,7 @@ export default function Navbar() {
           ))}
           <li className="ml-3">
             <a
-              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/resume.pdf`}
+              href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/MadhavPai_Resume.pdf`}
               download
               className="btn-primary text-xs px-4 py-2"
             >
