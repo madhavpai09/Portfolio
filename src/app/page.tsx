@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import { GlassmorphismPortfolioBlock } from '@/components/ui/glassmorphism-portfolio-block-shadcnui';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
@@ -13,6 +14,12 @@ export default function Home() {
       <main>
         <Hero />
         <div className="max-w-none">
+          <GlassmorphismPortfolioBlock />
+
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+          </div>
+
           <About />
 
           {/* Divider */}
