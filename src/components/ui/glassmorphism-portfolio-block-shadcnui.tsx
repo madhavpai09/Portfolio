@@ -165,9 +165,8 @@ export function GlassmorphismPortfolioBlock() {
                   transition={{ duration: 0.5, delay: 0.25 }}
                   className="text-4xl font-bold tracking-tight text-foreground md:text-5xl"
                 >
-                  J{' '}
                   <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
-                    Madhav Pai
+                    J Madhav Pai
                   </span>
                 </motion.h1>
                 <motion.p
