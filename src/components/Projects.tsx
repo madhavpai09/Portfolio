@@ -59,6 +59,24 @@ const projects: Project[] = [
     github: 'https://github.com/madhavpai09',
     featured: true,
   },
+  {
+    number: '03',
+    title: 'For-You Timeline',
+    subtitle: 'Recommendation Simulator',
+    problem:
+      'Social platforms often lack transparency in how their feed algorithms weight engagement metrics and handle low-trust content.',
+    solution:
+      'Built an interactive simulator of Twitter\'s Heavy Ranker heuristic scoring pipeline with a custom graph-based Trust Score system and a scratch-built force-directed graph visualization engine.',
+    impact: [
+      'Computes feed rankings from likes, retweets, replies, recency, and follow-status weights in real-time',
+      'Propagates trust from verified "seed" nodes across the network via a custom weighted-edge decay model',
+      'Filters low-trust content in real-time with a "Kid-Safe Mode" without relying on keyword-based filtering',
+      'Renders trust propagation interactively via a custom force-directed graph visualization engine',
+    ],
+    stack: ['React', 'Vite', 'Social Network Analysis', 'Algorithms'],
+    github: 'https://github.com/ashmaav/for-you-timeline',
+    featured: true,
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
@@ -67,10 +85,8 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       ref={ref}
-      className="section-animate glass rounded-2xl p-7 card-hover group relative overflow-hidden"
+      className="section-animate glass rounded-lg p-7 card-hover group relative overflow-hidden"
     >
-      {/* Gradient accent top-left */}
-      <div className="absolute top-0 left-0 w-32 h-32 bg-cyan-400/5 rounded-full blur-2xl pointer-events-none group-hover:bg-cyan-400/10 transition-all duration-500" />
 
       <div className="relative z-10">
         {/* Header */}

@@ -59,7 +59,7 @@ export default function Experience() {
                 {/* Timeline dot */}
                 <div className="absolute -left-[3.35rem] top-6 w-3 h-3 rounded-full bg-cyan-400 glow-cyan hidden sm:block" />
 
-                <div className="glass rounded-2xl p-7 card-hover group">
+                <div className="glass rounded-lg p-7 card-hover group">
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-5">
                     <div>
