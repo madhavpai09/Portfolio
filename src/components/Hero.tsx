@@ -11,7 +11,7 @@ const roles = [
 
 const stats = [
   { label: 'CGPA', value: '9.4' },
-  { label: 'Current Role', value: 'AI Intern' },
+  { label: 'Prev. Role', value: 'AI Intern' },
   { label: 'Stack', value: 'Full-Stack' },
   { label: 'Status', value: 'Open to Work' },
 ];

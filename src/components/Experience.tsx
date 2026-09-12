@@ -18,7 +18,7 @@ const experience: Job[] = [
     role: 'AI Engineer Intern',
     company: 'Cynepia Technologies',
     location: 'Bangalore, India',
-    period: 'Jan 2026 – Present',
+    period: 'Jan 2026 – June 2026',
     type: 'Internship',
     bullets: [
       'Designed Trainer-bench — a modular framework that converts AI benchmarks into trainable environments for agentic RL models, enabling reproducible multi-benchmark experimentation.',
