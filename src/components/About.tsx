@@ -59,9 +59,9 @@ export default function About() {
               I&apos;m J Madhav Pai — a third-year{' '} <span className="text-slate-200 font-medium">
                 CS & Business Systems
               </span>{' '}
-              student at BMSCE Bangalore, currently working as an{' '}
+              student at BMSCE Bangalore,{' '}
               <span className="text-cyan-400 font-medium">
-                AI Engineer Intern at Cynepia Technologies
+               Ex-Ai Engineer Intern at Cynepia Technologies
               </span>
               .
             </p>
